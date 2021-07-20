@@ -1,0 +1,348 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>SimpleLink SDK Plugins Overview</title>
+<link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/fonts/ubuntu-regular-woff.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/fonts/glyphicons-halflings-regular.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/themes/united2.min.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/themes/bootstrap-responsive.min.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/strapdown.css"><link rel="shortcut icon" type="image/x-icon" href="../../../.metadata/favicon.ico"></head>
+
+<!-- START PRE -->
+
+
+
+
+
+
+<!-- END PRE -->
+
+<body style=""><div class="container"><nav class="navbar navbar-default navbar-static-top"><div class="container-fluid"> <div class="navbar-header">  <div id="headline" class="navbar-brand">SimpleLink SDK Plugins Overview</div> </div> </div></nav><div class="container"><div class="row row-offcanvas row-offcanvas-left"><div class="col-xs-12 col-sm-9" id="content"><h1 class="body-heading" id="introduction">Introduction<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#introduction"></a></h1><p>SimpleLink SDK Plugins (referred simply to as "plugins" from here forward) are power software packages that are designed to extend the base functionality of one or more SimpleLink SDKs. Plugins provide use case application functionalities that are outside the scope of each platform SDK's base functionality. These plugins provide developers with a way to enhance support of their SDK to better match their application's individual needs. This SimpleLink Academy module is made to deep dive into the definition of an SDK Plugin as well as give users a couple of specific examples of plugin usage.</p>
+<h1 class="body-heading" id="prerequisites">Prerequisites<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#prerequisites"></a></h1><h2 class="body-heading" id="suggested-simplelink-academy-labs">Suggested SimpleLink Academy Labs<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#suggested-simplelink-academy-labs"></a></h2><ul>
+<li><a href="../../rtos/posix_project_zero/posix_project_zero.html">POSIX Project Zero</a></li>
+<li><a href="../../blestack/ble_01_basic/ble_01_basic.html">Bluetooth low energy Fundamentals</a></li>
+<li><a href="../../msp432/msp432_02_thermostat/msp432_02_thermostat.html">Multi-threaded RTOS Thermostat</a></li>
+<li><a href="../../rtos/freertos_basics/freertos_basics.html">FreeRTOS Basics</a></li>
+</ul>
+<h2 class="body-heading" id="software">Software<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#software"></a></h2><ul>
+<li><a href="http://www.ti.com/tool/CCSTUDIO">Code Composer Studio v7.1.0 and newer</a></li>
+<li><a href="http://www.freertos.org/">FreeRTOS 9.0.0(or the version supported by your SDK</a></li>
+</ul>
+<h2 class="body-heading" id="hardware">Hardware<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#hardware"></a></h2><ul>
+<li><a href="http://www.ti.com/tool/MSP-EXP432P401R">MSP-EXP432P401R LaunchPad</a></li>
+<li><a href="http://www.ti.com/tool/boostxl-sensors">BOOSTXL-SENSORS Sensors BoosterPack</a></li>
+<li><a href="http://www.ti.com/tool/BOOSTXL-CC2650MA">BOOSTXL-CC2650MA Module BoosterPack</a> OR <a href="http://www.ti.com/tool/launchxl-cc2640r2">LAUNCHXL-CC2640R2 LaunchPad</a></li>
+</ul>
+<h1 class="body-heading" id="sdk-plugin-concept">SDK Plugin Concept<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#sdk-plugin-concept"></a></h1><p>Plugins are intended to extend functionality of each individual SimpleLink SDK to include specialized use-cases. These specialized use cases can range anywhere from adding wireless functionality to extending a platform SDK's example base.</p>
+<p>While all of the plugins have the same basic structure and look-and-feel of an SDK, they are not meant as standalone applications and rely heavily on components from the base platform SDK. The SimpleLink MSP432 Sensors and Actuator Interface Library Plugin, for example, relies heavily on the TI-Drivers, RTOS kernels, DriverLib, and various other components from the platform SDK. A high level block diagram of these dependencies can be seen in the image below:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/SAIL-Plugin-with-sdk.jpg" alt="Plugin requirements" class="img-responsive"></div><p></p>
+<p>It is important to note that each plugin contains all of the necessary components to function fully alongside the platform SDK. Plugins do not install inside of the SDK itself, but rather in a folder next to the SDK. This is to simplify the maintenance model as well as provide customers with a organic experience for updating and switching between plugin versions.</p>
+<div class="bs-callout bs-callout-info "><h4><span class="glyphicon glyphicon-info-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">SDK Version Requirement
+</span></h4>
+<p>Each plugin has been tested and verified against a specific version of the platform SDK. The version of the SDK that the plugin has been verified against is referred to as the "compatible version" of the SDK. While versions other than the "compatible version" of the SDK will likely work with the plugin, the "compatible version" of the SDK is guaranteed work. Refer to each plugin's release notes for the compatible version of the SDK.</p>
+</div>
+<div class="bs-callout bs-callout-info "><h4><span class="glyphicon glyphicon-info-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">One plugin for multiple SDKs
+</span></h4>
+<p>Through the use of the highly portable TI-Driver libraries and utilization of standardized POSIX APIs it is possible for one plugin to support multiple SDKs. The Sensor and Actuator Interface Layer Plugin (commonly referred to as SAIL) is a prime example of a plugin that provides support for multiple platform SDKs.</p>
+</div>
+<h1 class="body-heading" id="plugin-directory-structure">Plugin Directory Structure<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#plugin-directory-structure"></a></h1><p>Plugins are designed to have have a uniform look-and-feel as well as a common user experience across platforms. The folder structure for SimpleLink SDK Plugins is made to mimic the standard folder structure that the base SimpleLink SDK adheres to. </p>
+<p>On the file system, where do SDK plugins reside?</p>
+<div class="quiz-toolbar"><div>
+<input type="radio" id="q1.0" class="answer-wrong" name="quiz-1"><label for="q1.0" class="quiz-label ">Inside the platform SDK's folder</label>
+<input type="radio" id="q1.1" class="answer-right" name="quiz-1"><label for="q1.1" class="quiz-label " data-toggle="tooltip" data-html="true" data-container="body" data-placement="auto top" data-trigger="click" title="" data-original-title="&lt;p&gt; Correct, for maintenance and sanity the plugins are physically installed outside of the platform SDKs.&lt;/p&gt;
+">Outside the platform SDK's folder </label>
+</div></div>
+<p>On what software packages can plugins rely on (multiple answers can be selected)?</p>
+<div class="quiz-toolbar"><div>
+<input type="radio" id="q2.2" class="answer-right" name="quiz-2"><label for="q2.2" class="quiz-label " data-toggle="tooltip" data-html="true" data-container="body" data-placement="auto top" data-trigger="click" title="" data-original-title="&lt;p&gt; Correct! At a minimum, an SDK Plugin will rely on one or more SimpleLink SDKs&lt;/p&gt;
+">A SimpleLink SDK </label>
+<input type="radio" id="q2.3" class="answer-right" name="quiz-2"><label for="q2.3" class="quiz-label " data-toggle="tooltip" data-html="true" data-container="body" data-placement="auto top" data-trigger="click" title="" data-original-title="&lt;p&gt; Correct! Plugins can rely on other plugins.&lt;/p&gt;
+">Another SimpleLink SDK Plugin </label>
+</div></div>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">TI Resource Explorer Simplification
+</span></h4>
+<p>Note that the section below describes the folder structure of an SDK plugin as it exists on your computer's local file system. If you are relying on TI Resource Explorer for your sole development experience then the following section will be hidden from the development experience.</p>
+</div>
+<p>From the root directory, typical folders that are included in a standard SDK plugin are listed below:</p>
+<ul>
+<li><strong>.metadata/</strong> - Internal folder for product integration into Code Composer Studio. You do not have to edit any files in this folder.</li>
+<li><strong>docs/</strong> - Contains all documentation related to the SDK plugin</li>
+<li><strong>kernel/</strong> - Contains any custom RTOS kernel configuration files</li>
+<li><strong>examples/</strong> - Contains all of the code examples and their IDE project files</li>
+<li><strong>source/</strong> - Contains generic/reusable code that can be imported into end applications</li>
+<li><strong>tools/</strong> - Contains various tools/utilities that supplement the release</li>
+</ul>
+<p>The <em>source/</em> folder contains the code that is likely to end up seeing its way into an end application. Within the this folder there are likely the two following folders:</p>
+<ul>
+<li><strong>third_party/</strong> - Third party source code </li>
+<li><strong>ti/</strong> - TI provided collateral</li>
+</ul>
+<div class="bs-callout bs-callout-info "><h4><span class="glyphicon glyphicon-info-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">SimpleLink MSP432 SDK Requirement
+</span></h4>
+<p>The directory structure below are listed as guidelines. Different plugins with different application requirements may not have all of the above folders or may define custom folders as dictated by the plugin's requirements.</p>
+</div>
+<h1 class="body-heading" id="plugins-depending-on-other-plugins">Plugins depending on other plugins<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#plugins-depending-on-other-plugins"></a></h1><p>Plugins extend functionality of a platform SDK, however there is nothing stopping a plugin from providing additional functionality and support to another SimpleLink SDK Plugin. A good example of this inter-plugin dependency is showcased in the hands-on portion of this training module. In this training module the Sensors BoosterPack code example is used from the SimpleLink MSP432 SDK Bluetooth plugin. This code example not only relies heavily on components from the SimpleLink MSP432 SDK, however also components from the Sensors and Actuator Interface Library Plugin.</p>
+<p>Customers are able to utilize as many SDK plugins in their project as their project requirements dictate. It is important to note that individual plugin version dependencies must be sanity checked against the target platform SDK in order to ensure compatibility.</p>
+<p>Which platform SDK does the Sensor and Actuator Interface Library (SAIL) Plugin support?</p>
+<div class="quiz-toolbar"><div>
+<input type="radio" id="q3.4" class="answer-wrong" name="quiz-3"><label for="q3.4" class="quiz-label ">SimpleLink MSP432 SDK</label>
+<input type="radio" id="q3.5" class="answer-wrong" name="quiz-3"><label for="q3.5" class="quiz-label ">SimpleLink CC2640R2 SDK</label>
+<input type="radio" id="q3.6" class="answer-wrong" name="quiz-3"><label for="q3.6" class="quiz-label ">SimpleLink CC3220 SDK</label>
+<input type="radio" id="q3.7" class="answer-wrong" name="quiz-3"><label for="q3.7" class="quiz-label ">SimpleLink CC13x0 SDK</label>
+<input type="radio" id="q3.8" class="answer-right" name="quiz-3"><label for="q3.8" class="quiz-label " data-toggle="tooltip" data-html="true" data-container="body" data-placement="auto top" data-trigger="click" title="" data-original-title="&lt;p&gt; Correct. Since SAIL is written with TI-Drivers it is compatible across all SimpleLink SDKs.&lt;/p&gt;
+">All of the above </label>
+</div></div>
+<h1 class="body-heading" id="downloading-and-installing-freertos">Downloading and Installing FreeRTOS<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#downloading-and-installing-freertos"></a></h1><p>Due to maintenance concerns and logistical difficulties it is required to download the FreeRTOS kernel from the web before it is usable within the SimpleLink SDK (or plugin ecosystem). The download site for FreeRTOS can be found at the link below:</p>
+<p><a href="http://www.freertos.org/a00104.html">FreeRTOS Download Page</a></p>
+<p>Downloading FreeRTOS is fast, free, and does not require any cumbersome registration process. Once the FreeRTOS installation has been downloaded, run the installer and extract the files to your directory of choice:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/freertos1.png" alt="FreeRTOS extraction" class="img-responsive"></div><p></p>
+<p>In order for Code Composer Studio to build the FreeRTOS kernel it is required to point CCS to directory that you installed FreeRTOS to in the previous step.  From the CCS menu bar, click <strong>Window-&gt;Preferences</strong> to pull up the option menu:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/freertos2.jpg" alt="Preferences" class="img-responsive"></div><p></p>
+<p>Under the tab menu on the side navigate to <strong>General-&gt;Workspace-&gt;Linked Resources</strong>:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/freertos3.jpg" alt="Linked resources" class="img-responsive"></div><p></p>
+<p>On this window you will have the ability to define custom path variables. Click on the <strong>New..</strong> button to open the path variable window:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/freertos4.png" alt="Custom path" class="img-responsive"></div><p></p>
+<p>The variable that needs to be defined is named <code>FREERTOS_INSTALL_DIR</code>. Enter <code>FREERTOS_INSTALL_DIR</code> into the <strong>Name</strong> field and enter the path where you installed FreeRTOS into the <strong>Location</strong> field. After doing this click <strong>OK</strong> to define the new variable and <strong>OK</strong> again to then save the settings. After defining this variable once for a CCS workspace there is no need to repeat the steps per project as the <code>FREERTOS_INSTALL_DIR</code> variable will persist to all projects in your CCS workspace.</p>
+<h1 class="body-heading" id="setting-up-the-hardware">Setting up the hardware<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#setting-up-the-hardware"></a></h1><p>Attach the CC2650 BoosterPack on top of the MSP432 LaunchPad <strong>while being very careful not to bend any pins.</strong> When finished, the stacked configuration should look similar to the image below:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/fs_1.jpg" alt="CC2650 on the MSP432" class="img-responsive"></div><p></p>
+<p>Alternatively, the CC2640R2 LaunchPad can be used in lieu of the CC2650 BoosterPack. In this case the CC2640R2 LaunchPad should be stacked on the MSP432 LaunchPad as seen below:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/cc2640r2stack.jpg" alt="CC2640R2 on the MSP432" class="img-responsive"></div><p></p>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Special SNP Firmware Required
+</span></h4>
+<p>Note if you are using the CC2640R2 LaunchPad as your BLE radio a special version of the SNP firmware must be flashed onto the LaunchPad. Please refer to the Bluetooth Plugin documentation on the necessary steps to flash this firmware.</p>
+</div>
+<p>As a third layer to this hardware configuration the lab in this SimpleLink Academy module requires the <a href="http://www.ti.com/tool/boostxl-sensors">BOOSTXL-SENSORS Sensors BoosterPack</a>. This module should be stacked upon the hardware configuration described above and should look similar to the picture below:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/sh_12.jpg" alt="Sensors BoosterPack stack" class="img-responsive"></div><p></p>
+<h1 class="body-heading" id="running-the-code-example">Running the code example<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#running-the-code-example"></a></h1><p>This training module leverages the <a href="http://www.ti.com/tool/boostxl-sensors">BOOSTXL-SENSORS Sensors BoosterPack</a> combined with the Sensors BoosterPack code example that is part of the SimpleLink MSP432 SDK Bluetooth Plugin. The BOOSTXL-SENSORS BoosterPack contains a wide variety of sensors including optical, movement, temperature, pressure, and humidity sensors. As external sensor interfacing falls outside of the generic scope of the MSP432 SDK, the Sensors and Actuator Interface Library (SAIL) Plugin provides a generic set of APIs that are used to setup, configure, and access each sensor on the BOOSTXL-SENSORS BoosterPack. The Sensors Code Example in the Bluetooth Plugin will read out sensor readings using the relevant SAIL calls and advertise these readings over BLE using the collateral included with the SimpleLink MSP432 SDK Bluetooth Plugin.</p>
+<p>It's important to note that while the MSP432 SDK is used in conjunction with the SAIL plugin, conceivably any SimpleLink SDK could use SAIL and the libraries that it has to offer. All sensor interaction in the SAIL source code is done so by using generic TI-Drivers thus making the code highly portable across all devices in the SimpleLink SDK family. Additionally, since SAIL (and the Bluetooth plugin) are written in generic POSIX API calls either FreeRTOS or TI-RTOS could be used. In this training module FreeRTOS is used to show the versatility and portability of the POSIX API standard. If TI-RTOS is preferred, please refer to the various TI-RTOS based training modules for further instructions.</p>
+<p>The first SDK Plugin that is needed is the SimpleLink MSP432 SDK Bluetooth Plugin. As BLE radio functionality is not integrated for the MSP432 microcontroller the libraries that enable communication with an external BLE radio have been abstracted out into an SDK Plugin. </p>
+<p>From the TI Resource Explorer, navigate to the <code>Sensor BoosterPack</code> code example under the <strong>Examples</strong> menu item. This code example is located under <strong>Software-&gt;SimpleLink SDK Plugins-&gt;Connectivity-&gt;SimpleLink MSP432 SDK Bluetooth Plugin-&gt;Examples-&gt;Development Tools-&gt;MSP-EXP432P401R-&gt;Bluetooth-&gt;sensor_boosterpack-&gt;FreeRTOS-&gt;CCS Compiler-&gt;sensor_boosterpack</strong>:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/trex1.png" alt="Code example in TI Resource Explorer" class="img-responsive"></div><p></p>
+<p>Before any code examples can be imported into your local CCS installation, the SDK Plugin and the SDK both need to be made available offline. To do this, click the <strong>Install on Desktop</strong> button to the top right of the code example and select <strong>Make Available Offline</strong>.</p>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Code Composer Cloud Support
+</span></h4>
+<p>All of the code examples included in the SimpleLink MSP432 SDK Plugin are supported with <a href="http://dev.ti.com">Code Composer Studio Cloud Tools</a>. When using Code Composer Studio and TI Resource Explorer from the cloud the software packages do not need to be made available offline. Note that FreeRTOS examples are currently not supported in Code Composer Studio on the cloud so the offline version must be used in order to take advantage of using the FreeRTOS kernel.</p>
+</div>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/trex2.png" alt="Installing the plugin" class="img-responsive"></div><p></p>
+<p>This will prompt you to install the SimpleLink MSP432 SDK Bluetooth Plugin to the desktop to make available for offline use.</p>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Version Numbers
+</span></h4>
+<p>Note version numbers on your environment might vary slightly from those in the screenshots</p>
+</div>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/trex3.png" alt="Installing the plugin" class="img-responsive"></div><p></p>
+<p>As the SimpleLink MSP432 SDK Bluetooth plugin requires the base SimpleLink MSP432 SDK, TI Resource Explorer will prompt you to install the SimpleLink MSP432 SDK if it is not already installed. Make sure to follow the prompts to also make the SDK available offline. Additionally, since the SAIL plugin is required for the SimpleLink MSP432 SDK Plugin, TI Resource Explorer will prompt you to download the relevant SAIL plugin as well. </p>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Not Optional
+</span></h4>
+<p>Note that while CCS will mark these dependencies as optional, they are required for correct operation of this code example.</p>
+</div>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/trex4.png" alt="Installing dependencies" class="img-responsive"></div><p></p>
+<p>To import the Sensors BoosterPack project into your workspace, click the <strong>Import to IDE</strong> button.</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/trex5.png" alt="Import to IDE" class="img-responsive"></div><p></p>
+<p>After the project is imported into your IDE workspace an additional FreeRTOS kernel project should also automatically be imported. This project will automatically compile the FreeRTOS kernel (located at the directory specified earlier) and link it against the Sensors BoosterPack code example. Build your application and run it as you would any normal CCS project. </p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/trex6.jpg" alt="Running the example" class="img-responsive"></div><p></p>
+<h1 class="body-heading" id="mechanics-and-components-of-the-code-example">Mechanics and components of the code example<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#mechanics-and-components-of-the-code-example"></a></h1><p>The Sensors BoosterPack code example follows the same basic model as all other code examples in the SimpleLink MSP432 SDK Bluetooth Plugin. Once the FreeRTOS scheduler starts, separate pthreads are started for each sensor that is included on the Sensors BoosterPack. Each sensor also has its own BLE profile and characteristics that are being advertised as a part of the whole device advertisement. These profiles and characteristics are listed in the table below:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th><strong>Purpose</strong></th>
+<th><strong>UUID</strong></th>
+<th><strong>Format</strong></th>
+<th><strong>Unit</strong></th>
+<th><strong>Properties</strong></th>
+<th><strong>Profile Source</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IR Temperature Data</td>
+<td>F000AA01-0451-4000-B000-000000000000</td>
+<td>IEEE-754 32-bit floating point</td>
+<td>°C</td>
+<td>Notify</td>
+<td>ir_temp_service.c</td>
+</tr>
+<tr>
+<td>IR Temperature Config (enable)</td>
+<td>F000AA02-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>N/A</td>
+<td>Read/Write</td>
+<td>ir_temp_service.c</td>
+</tr>
+<tr>
+<td>IR Temperature Notification Period</td>
+<td>F000AA03-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>ms</td>
+<td>Read/Write</td>
+<td>ir_temp_service.c</td>
+</tr>
+<tr>
+<td>Humidity Data</td>
+<td>F000AA21-0451-4000-B000-000000000000</td>
+<td>IEEE-754 32-bit floating point</td>
+<td>Percent</td>
+<td>Notify</td>
+<td>humidity_service.c</td>
+</tr>
+<tr>
+<td>Humidity Config (enable)</td>
+<td>F000AA22-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>N/A</td>
+<td>Read/Write</td>
+<td>humidity_service.c</td>
+</tr>
+<tr>
+<td>Humidity Notification Period</td>
+<td>F000AA23-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>ms</td>
+<td>Read/Write</td>
+<td>humidity_service.c</td>
+</tr>
+<tr>
+<td>Barometer Data</td>
+<td>F000AA41-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>Pascals</td>
+<td>Notify</td>
+<td>barometer_service.c</td>
+</tr>
+<tr>
+<td>Barometer Config (enable)</td>
+<td>F000AA42-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>N/A</td>
+<td>Read/Write</td>
+<td>barometer_service.c</td>
+</tr>
+<tr>
+<td>Barometer Notification Period</td>
+<td>F000AA43-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>ms</td>
+<td>Read/Write</td>
+<td>barometer_service.c</td>
+</tr>
+<tr>
+<td>Optic Data</td>
+<td>F000AA71-0451-4000-B000-000000000000</td>
+<td>IEEE-754 32-bit floating point</td>
+<td>lux</td>
+<td>Notify</td>
+<td>optic_service.c</td>
+</tr>
+<tr>
+<td>Optic Config (enable)</td>
+<td>F000AA72-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>N/A</td>
+<td>Read/Write</td>
+<td>optic_service.c</td>
+</tr>
+<tr>
+<td>Optic Notification Period</td>
+<td>F000AA73-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>ms</td>
+<td>Read/Write</td>
+<td>optic_service.c</td>
+</tr>
+<tr>
+<td>Movement Data</td>
+<td>F000AA81-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>Custom</td>
+<td>Notify</td>
+<td>movement_service.c</td>
+</tr>
+<tr>
+<td>Movement Config (enable)</td>
+<td>F000AA82-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>N/A</td>
+<td>Read/Write</td>
+<td>movement_service.c</td>
+</tr>
+<tr>
+<td>Movement Notification Period</td>
+<td>F000AA83-0451-4000-B000-000000000000</td>
+<td>Integer</td>
+<td>ms</td>
+<td>Read/Write</td>
+<td>movement_service.c</td>
+</tr>
+</tbody>
+</table>
+<p>Each individual pthread will be disabled by default and start when an integer value of "1" is written to the corresponding <strong>Config</strong> characteristic. By default, the period of each sensor is set to <strong>1000ms</strong>. This means that once enabled, a new sensor reading will be initiated and advertised every 1000ms. While there are no explicit restrictions on this period parameter, sensor capabilities will dictate how fast the sampling rate can be set.</p>
+<p>How many BLE profiles are a part of the Sensors BoosterPack code example?</p>
+<div class="quiz-toolbar"><div>
+<input type="radio" id="q4.9" class="answer-wrong" name="quiz-4"><label for="q4.9" class="quiz-label ">1</label>
+<input type="radio" id="q4.10" class="answer-right" name="quiz-4"><label for="q4.10" class="quiz-label " data-toggle="tooltip" data-html="true" data-container="body" data-placement="auto top" data-trigger="click" title="" data-original-title="&lt;p&gt; Correct. Each sensor will have one profile with three characteristics associated with it.&lt;/p&gt;
+">5 </label>
+<input type="radio" id="q4.11" class="answer-wrong" name="quiz-4"><label for="q4.11" class="quiz-label ">15</label>
+</div></div>
+<p>How many BLE characteristics are a part of the Sensors BoosterPack code example?</p>
+<div class="quiz-toolbar"><div>
+<input type="radio" id="q5.12" class="answer-wrong" name="quiz-5"><label for="q5.12" class="quiz-label ">1</label>
+<input type="radio" id="q5.13" class="answer-wrong" name="quiz-5"><label for="q5.13" class="quiz-label ">5 </label>
+<input type="radio" id="q5.14" class="answer-right" name="quiz-5"><label for="q5.14" class="quiz-label " data-toggle="tooltip" data-html="true" data-container="body" data-placement="auto top" data-trigger="click" title="" data-original-title="&lt;p&gt; Correct. There are a total of fifteen advertised BLE characteristics&lt;/p&gt;
+">15 </label>
+</div></div>
+<p>Each sensor on the Sensors BoosterPack will have its own dedicated pthread and service associated with it. Additionally, a separate BLE connection pthread (as a part of project_zero.c) is running that handles all BLE advertisement, connection management, and firmware bootloading. </p>
+<h1 class="body-heading" id="running-the-code-example-ios-">Running the code example (iOS)<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#running-the-code-example-ios-"></a></h1><p>A generic application used to configure and manipulate BLE devices on iOS is <a href="https://itunes.apple.com/us/app/lightblue-explorer-bluetooth-low-energy/id557428110?mt=8">LightBlue Explorer</a>. This is a third party application that has the ability to fully configure and manipulate any generic BLE device. </p>
+<p>To use LightBlue Explorer, first download it from the AppStore on your iOS device. After opening the application it will start scanning for BLE devices in your general vicinity. Press the S1 button on the side of your LaunchPad to start advertisement. Once advertising, the MSP432 will show up in LightBlue Explorer as "MSP432 SensorHub". </p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/ios1.png" alt="Light Blue Explorer" class="img-responsive"></div><p></p>
+<p>Touch this entry to connect to the device. Once connected and negotiated, a list of all advertised profiles and characteristics will be displayed (you may have to scroll down past the device descriptors):</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/ios2.png" alt="Light Blue Explorer" class="img-responsive"></div><p></p>
+<p>These profiles and characteristics will correspond to those listed above in the profile and characteristic table. Touch the <strong>Data</strong> notification of one of the sensor profiles. On this screen touch the <strong>Listen for notifications</strong> button to start subscribing to notifications for the selected sensor:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/ios3.png" alt="Light Blue Explorer" class="img-responsive"></div><p></p>
+<p>Return to the profile overview view and select the <strong>Config</strong> characteristic of the profile that you subscribed to. Touch <strong>Write new value</strong> and enter a value of "1" to start the sensor:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/ios4.png" alt="Light Blue Explorer" class="img-responsive"></div><p></p>
+<p>Once written, the sensor task on the MSP432 will actively start to sample data and send notifications back to your iOS device. These notifications will show up under the <strong>Data</strong> characteristic. </p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/ios5.png" alt="Light Blue Explorer" class="img-responsive"></div><p></p>
+<p>To change the period of notifications the <strong>Period</strong> characteristic can be written to. Note that there is no safeguard on this value so only choose sampling periods that are supported by the sensor that is being controlled.</p>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Floating Point Display
+</span></h4>
+<p>You will have to change the display format of the notifications to match that of the sensor. For example temperature should be displayed as a floating point value. Refer to the table above for data formats for each individual sensor.</p>
+</div>
+<h1 class="body-heading" id="running-the-code-example-android-">Running the code example (Android)<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#running-the-code-example-android-"></a></h1><p>A generic Android application that can be used to configure and control your code example on Android based systems is the BLE Scanner application located at the link below:</p>
+<p><a href="https://play.google.com/store/apps/details?id=com.macdom.ble.blescanner&amp;hl=en">BLE Scanner</a></p>
+<p>BLE Scanner is a generic Android application that can connect to an arbitrary BLE device and read, write, and configure attached services and characteristics. Download this application from the Google Play store and launch it from your home screen. Once open, press the S1 button on your LaunchPad to begin advertisement. The "MSP432 SensorHub" device should show up in the device list.</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/android1.png" alt="BLE Scanner" class="img-responsive"></div><p></p>
+<p>Once connected a list of characteristics will be displayed. Find one of the characteristics that matches the <strong>Data</strong> UUID listed in the service/characteristic table above. Touch the small N located next to this service to enable notifications.</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/android2.png" alt="BLE Scanner" class="img-responsive"></div><p></p>
+<p>Once notifications are enabled, write a value of "1" text value by touching the small <strong>W</strong> next to the corresponding <strong>Data</strong> characteristic. This will enable notifications to start on the original Data characteristic.</p>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Floating Point Display
+</span></h4>
+<p>Note the data format being notified may be floating point format so manual conversion will have to occur in order to decipher the data.</p>
+</div>
+<h1 class="body-heading" id="running-the-code-example-simplelink-sdk-explorer-">Running the code example (SimpleLink SDK Explorer)<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#running-the-code-example-simplelink-sdk-explorer-"></a></h1><p>SimpleLink SDK Explorer is a customized mobile application from Texas Instruments that is designed to compliment various aspects of the SimpleLink SDK mobile ecosystem. Currently this application is available for iOS devices. Android support is currently not available. The code examples included in the SimpleLink MSP432 SDK plugin are fully modeled and showcased as a part of SimpleLink SDK Explorer. From the Apple AppStore search for SimpleLink SDK and download the SimpleLink SDK Explorer. Open the mobile application once it has been downloaded. </p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/exp1.png" alt="SimpleLink SDK Explorer Main Menu" class="img-responsive"></div><p></p>
+<p>From the main screen select the <strong>Profile Examples</strong> menu item. This will take you to a list of profile examples that correspond to each code example in the SimpleLink MSP432 SDK Bluetooth Plugin:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/exp2.png" alt="SimpleLink SDK Explorer Profiles" class="img-responsive"></div><p></p>
+<p>Select the <strong>Sensors BoosterPack</strong> menu item. On the next screen SimpleLink SDK Explorer will automatically scan for BLE devices in your vicinity. After pressing S1 on your MSP432 LaunchPad the Sensors Code Example will start to advertise and show up as "MSP432 SensorHub":</p>
+<div class="bs-callout bs-callout-info "><h4><span class="glyphicon glyphicon-info-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Make sure Bluetooth is enabled
+</span></h4>
+<p>Make sure Bluetooth is enabled on your iOS device or else no devices will show up in this view.</p>
+</div>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/exp3.png" alt="SimpleLink SDK Explorer Device View" class="img-responsive"></div><p></p>
+<p>Select this device. After a series of negotiation and handshaking the sensors overview is displayed:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/exp4.png" alt="SimpleLink SDK Config" class="img-responsive"></div><p></p>
+<p>All sensors will automatically be enabled and the period of each sensor will be set to a period of <strong>100ms</strong>. Each sensor task will also have an associated graph view. These graphs are accessible through the tab bar located at the bottom of the screen. Click on the movement tab to open the gyrometer graph:</p>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="images/exp5.png" alt="SimpleLink SDK Explorer Graph" class="img-responsive"></div><p></p>
+<p>One the graph view you will have the ability to change the period of the sensor sampling rate. Move the LaunchPad around on the screen and you will see the X, Y, and Z values change on the graph and value labels accordingly.</p>
+<h1 class="body-heading" id="where-to-find-plugins-and-support">Where to find plugins and support<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#where-to-find-plugins-and-support"></a></h1><p>A current set of supported plugins can be found on <strong>TI Resource Explorer</strong> under the <strong>SDK Plugins</strong> category. Additionally, outside of TI Resource Explorer, plugins can be found on individual download pages for each SDK. The MSP432 SDK, for example, has a subset of plugins located at the following link:</p>
+<p><a href="http://www.ti.com/tool/simplelink-msp432-sdk">SimpleLink MSP432 SDK Download Page</a></p>
+<p>Support is encouraged through use of the <a href="https://e2e.ti.com/">TI E2E Community</a>. Additional support can be garnered through the various documentation provided with associated SimpleLink SDKs and SimpleLink SDK Plugins.</p>
+<div align="center" style="margin-top: 4em; font-size: smaller;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="../../../web_support/cc_license_icon.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</div>
+
+</div><div class="col-xs-4 col-sm-2 sidebar-offcanvas bs-docs-sidebar hidden-print" id="sidebar-overview"><ul class="nav nav-stacked fixed" id="sidebar"><li><a href="#introduction">Introduction</a></li><li><a href="#prerequisites">Prerequisites</a><ul class="nav nav-stacked"><li><a href="#suggested-simplelink-academy-labs">Suggested SimpleLink Academy Labs</a></li><li><a href="#software">Software</a></li><li><a href="#hardware">Hardware</a></li></ul></li><li><a href="#sdk-plugin-concept">SDK Plugin Concept</a></li><li><a href="#plugin-directory-structure">Plugin Directory Structure</a></li><li><a href="#plugins-depending-on-other-plugins">Plugins depending on other plugins</a></li><li><a href="#downloading-and-installing-freertos">Downloading and Installing FreeRTOS</a></li><li><a href="#setting-up-the-hardware">Setting up the hardware</a></li><li><a href="#running-the-code-example">Running the code example</a></li><li><a href="#mechanics-and-components-of-the-code-example">Mechanics and components of the code example</a></li><li><a href="#running-the-code-example-ios-">Running the code example (iOS)</a></li><li><a href="#running-the-code-example-android-">Running the code example (Android)</a></li><li><a href="#running-the-code-example-simplelink-sdk-explorer-">Running the code example (SimpleLink SDK Explorer)</a></li><li><a href="#where-to-find-plugins-and-support">Where to find plugins and support</a></li></ul></div></div></div></div>
+
+
+
+<link rel="stylesheet" href="../../../web_support/highlight/styles/zenburn.css">
+<script src="../../../web_support/strapdown/vendor/jquery-1.11.2.min.js"></script>
+<script src="../../../web_support/strapdown/vendor/bootstrap.min.js"></script>
+<script src="../../../web_support/highlight/highlight.pack.js"></script>
+<script type="text/javascript">document.isPreRendered = true;</script><script src="../../../web_support/strapdown/v/0.2/strapdown.js"></script>      <div class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">        <div class="vertical-alignment-helper">          <div class="modal-dialog vertical-align-center">             <div class="modal-dialog">               <div class="modal-content" style="margin-left: auto;margin-right: auto;">                 <div class="modal-body">                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>                   <img src="" class="imagepreview img-responsive">                 </div>              </div>            </div>          </div>        </div>      </div>
+
+
+</body></html>

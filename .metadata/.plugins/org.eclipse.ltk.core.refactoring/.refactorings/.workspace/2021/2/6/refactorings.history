@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;esp8266&apos; to &apos;connect_esp8266&apos;" description="Rename resource &apos;esp8266&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/esp8266" name="connect_esp8266" stamp="1612380125216" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;connect_esp8266&apos; to &apos;[not done]connect_esp8266&apos;" description="Rename resource &apos;connect_esp8266&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/connect_esp8266" name="[not done]connect_esp8266" stamp="1612439023423" updateReferences="true"/>
+</session>

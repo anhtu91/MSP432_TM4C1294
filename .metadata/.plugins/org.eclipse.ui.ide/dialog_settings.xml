@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\ATN\Documents\Code Compose Studio workspace\MSP432_[not_done]_SDCard_ConvertFrom_STM32_2"/>
+			<item value="C:\Users\ATN\Documents\Code Compose Studio workspace\MSP432_[not_done]_SDCard_ConvertFrom_STM32_3"/>
+			<item value="C:\Users\ATN\Documents\Code Compose Studio workspace\MSP432_[not_done]_FatFS_SDCard_UART_Command"/>
+			<item value="C:\Users\ATN\Downloads\MSP432-SD_Card-master"/>
+			<item value="C:\Users\ATN\Downloads\MSP432Launchpad-master\MSP432-Launchpad-FatFS-SDCard"/>
+			<item value="C:\Users\ATN\Documents\Microcontroller Datasheet\msp432p401r datasheet\I2cLcd-master"/>
+			<item value="C:\Users\ATN\Documents\Code Compose Studio workspace\blinkled_msp432p401r"/>
+			<item value="C:\Users\ATN\Documents\Code Compose Studio workspace\uart_transmit"/>
+			<item value="C:\Users\ATN\workspace_v10_TI\uart_transmit - Copy"/>
+			<item value="C:\Users\ATN\workspace_v10_TI\interrupt"/>
+			<item value="C:\Users\ATN\workspace_v10_TI\uart_transmitt"/>
+			<item value="C:\ti\simplelink_msp432p4_sdk_3_40_01_02"/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+	</section>
+</section>

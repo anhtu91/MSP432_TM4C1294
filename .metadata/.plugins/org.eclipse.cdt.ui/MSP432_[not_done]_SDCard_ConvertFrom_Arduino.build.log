@@ -1,0 +1,12 @@
+
+**** Clean-only build of configuration Debug for project MSP432_[not_done]_SDCard_ConvertFrom_Arduino ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "MSP432_[not_done]_SDCard_ConvertFrom_Arduino.hex"  "MSP432_[not_done]_SDCard_ConvertFrom_Arduino.out" 
+DEL /F "SD.obj" "main.obj" "spiDriver.obj" "system_msp432p401r.obj" "ccs\startup_msp432p401r_ccs.obj" 
+DEL /F "SD.d" "main.d" "spiDriver.d" "system_msp432p401r.d" "ccs\startup_msp432p401r_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****

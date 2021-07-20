@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MSP432_[not_done]_SDCard_ConvertFrom_STM32_2/Hardware/SysTick&apos; to &apos;SysTick.h&apos;" description="Rename resource &apos;SysTick&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Hardware/SysTick" name="SysTick.h" stamp="1615285745496" updateReferences="true"/>
+</session>

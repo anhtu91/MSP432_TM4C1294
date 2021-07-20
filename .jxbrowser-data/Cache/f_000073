@@ -1,0 +1,1118 @@
+[
+  {
+    "text": "bitband",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 4,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLr3w_s6761Mo&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLr3w_s6761Mo&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/bitband&removeoffline=true&id=VjLr3w_s6761Mo&includechildren=true",
+    "_id": "VjLr3w_s6761Mo",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLr3w_s6761Mo?extname=",
+    "linkType": "local",
+    "name": "bitband",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/bitband"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLr3w_s6761Mo",
+    "packageOrder": 440
+  },
+  {
+    "text": "blinky",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 3,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLTal8VRujZdA&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLTal8VRujZdA&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/blinky&removeoffline=true&id=VjLTal8VRujZdA&includechildren=true",
+    "_id": "VjLTal8VRujZdA",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLTal8VRujZdA?extname=",
+    "linkType": "local",
+    "name": "blinky",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/blinky"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLTal8VRujZdA",
+    "packageOrder": 440
+  },
+  {
+    "text": "boot_demo_emac_flash",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 7,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLJbu68J_y4Jk&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLJbu68J_y4Jk&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_demo_emac_flash&removeoffline=true&id=VjLJbu68J_y4Jk&includechildren=true",
+    "_id": "VjLJbu68J_y4Jk",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLJbu68J_y4Jk?extname=",
+    "linkType": "local",
+    "name": "boot_demo_emac_flash",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_demo_emac_flash"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLJbu68J_y4Jk",
+    "packageOrder": 440
+  },
+  {
+    "text": "boot_demo1",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 3,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLfzXLtTuAd0k&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLfzXLtTuAd0k&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_demo1&removeoffline=true&id=VjLfzXLtTuAd0k&includechildren=true",
+    "_id": "VjLfzXLtTuAd0k",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLfzXLtTuAd0k?extname=",
+    "linkType": "local",
+    "name": "boot_demo1",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_demo1"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLfzXLtTuAd0k",
+    "packageOrder": 440
+  },
+  {
+    "text": "boot_demo2",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 3,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLSaXZjz1BoQ0&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLSaXZjz1BoQ0&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_demo2&removeoffline=true&id=VjLSaXZjz1BoQ0&includechildren=true",
+    "_id": "VjLSaXZjz1BoQ0",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLSaXZjz1BoQ0?extname=",
+    "linkType": "local",
+    "name": "boot_demo2",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_demo2"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLSaXZjz1BoQ0",
+    "packageOrder": 440
+  },
+  {
+    "text": "boot_serial",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 17,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLc5-KbkcLiFY&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLc5-KbkcLiFY&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_serial&removeoffline=true&id=VjLc5-KbkcLiFY&includechildren=true",
+    "_id": "VjLc5-KbkcLiFY",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLc5-KbkcLiFY?extname=",
+    "linkType": "local",
+    "name": "boot_serial",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_serial"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLc5-KbkcLiFY",
+    "packageOrder": 440
+  },
+  {
+    "text": "boot_emac_flash",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 17,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLbhxVi9_qdHY&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLbhxVi9_qdHY&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_emac_flash&removeoffline=true&id=VjLbhxVi9_qdHY&includechildren=true",
+    "_id": "VjLbhxVi9_qdHY",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLbhxVi9_qdHY?extname=",
+    "linkType": "local",
+    "name": "boot_emac_flash",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/boot_emac_flash"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLbhxVi9_qdHY",
+    "packageOrder": 440
+  },
+  {
+    "text": "enet_io",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 32,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLfrzuzvt6v00&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLfrzuzvt6v00&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_io&removeoffline=true&id=VjLfrzuzvt6v00&includechildren=true",
+    "_id": "VjLfrzuzvt6v00",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLfrzuzvt6v00?extname=",
+    "linkType": "local",
+    "name": "enet_io",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_io"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLfrzuzvt6v00",
+    "packageOrder": 440
+  },
+  {
+    "text": "enet_lwip",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 27,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLi_z_HK0eF9U&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLi_z_HK0eF9U&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_lwip&removeoffline=true&id=VjLi_z_HK0eF9U&includechildren=true",
+    "_id": "VjLi_z_HK0eF9U",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLi_z_HK0eF9U?extname=",
+    "linkType": "local",
+    "name": "enet_lwip",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_lwip"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLi_z_HK0eF9U",
+    "packageOrder": 440
+  },
+  {
+    "text": "enet_uip",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 13,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLleKLcQljsvo&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLleKLcQljsvo&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_uip&removeoffline=true&id=VjLleKLcQljsvo&includechildren=true",
+    "_id": "VjLleKLcQljsvo",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLleKLcQljsvo?extname=",
+    "linkType": "local",
+    "name": "enet_uip",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_uip"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLleKLcQljsvo",
+    "packageOrder": 440
+  },
+  {
+    "text": "enet_weather",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 22,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLkJ0vCzZK230&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLkJ0vCzZK230&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_weather&removeoffline=true&id=VjLkJ0vCzZK230&includechildren=true",
+    "_id": "VjLkJ0vCzZK230",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLkJ0vCzZK230?extname=",
+    "linkType": "local",
+    "name": "enet_weather",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/enet_weather"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLkJ0vCzZK230",
+    "packageOrder": 440
+  },
+  {
+    "text": "gpio_jtag",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLStpiBZyWpI8&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLStpiBZyWpI8&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/gpio_jtag&removeoffline=true&id=VjLStpiBZyWpI8&includechildren=true",
+    "_id": "VjLStpiBZyWpI8",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLStpiBZyWpI8?extname=",
+    "linkType": "local",
+    "name": "gpio_jtag",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/gpio_jtag"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLStpiBZyWpI8",
+    "packageOrder": 440
+  },
+  {
+    "text": "hello",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLna7iLn0yxfk&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLna7iLn0yxfk&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/hello&removeoffline=true&id=VjLna7iLn0yxfk&includechildren=true",
+    "_id": "VjLna7iLn0yxfk",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLna7iLn0yxfk?extname=",
+    "linkType": "local",
+    "name": "hello",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/hello"
+      }
+    ],
+    "resourceSubClass": [
+      "example.helloworld"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLna7iLn0yxfk",
+    "packageOrder": 440
+  },
+  {
+    "text": "hibernate",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 10,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjL3XaeAAQX1zA&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjL3XaeAAQX1zA&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/hibernate&removeoffline=true&id=VjL3XaeAAQX1zA&includechildren=true",
+    "_id": "VjL3XaeAAQX1zA",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjL3XaeAAQX1zA?extname=",
+    "linkType": "local",
+    "name": "hibernate",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/hibernate"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjL3XaeAAQX1zA",
+    "packageOrder": 440
+  },
+  {
+    "text": "interrupts",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLSf05UMHVMOI&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLSf05UMHVMOI&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/interrupts&removeoffline=true&id=VjLSf05UMHVMOI&includechildren=true",
+    "_id": "VjLSf05UMHVMOI",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLSf05UMHVMOI?extname=",
+    "linkType": "local",
+    "name": "interrupts",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/interrupts"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLSf05UMHVMOI",
+    "packageOrder": 440
+  },
+  {
+    "text": "mpu_fault",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLq_M9G_EKRoo&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLq_M9G_EKRoo&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/mpu_fault&removeoffline=true&id=VjLq_M9G_EKRoo&includechildren=true",
+    "_id": "VjLq_M9G_EKRoo",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLq_M9G_EKRoo?extname=",
+    "linkType": "local",
+    "name": "mpu_fault",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/mpu_fault"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLq_M9G_EKRoo",
+    "packageOrder": 440
+  },
+  {
+    "text": "project0",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 3,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLQSc_ZSEg8wU&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLQSc_ZSEg8wU&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/project0&removeoffline=true&id=VjLQSc_ZSEg8wU&includechildren=true",
+    "_id": "VjLQSc_ZSEg8wU",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLQSc_ZSEg8wU?extname=",
+    "linkType": "local",
+    "name": "project0",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/project0"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLQSc_ZSEg8wU",
+    "packageOrder": 440
+  },
+  {
+    "text": "qs_iot",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 27,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLGvBlhzP9rM0&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLGvBlhzP9rM0&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/qs_iot&removeoffline=true&id=VjLGvBlhzP9rM0&includechildren=true",
+    "_id": "VjLGvBlhzP9rM0",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLGvBlhzP9rM0?extname=",
+    "linkType": "local",
+    "name": "qs_iot",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/qs_iot"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLGvBlhzP9rM0",
+    "packageOrder": 440
+  },
+  {
+    "text": "sleep_modes",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLGy40C2gS6Z8&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLGy40C2gS6Z8&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/sleep_modes&removeoffline=true&id=VjLGy40C2gS6Z8&includechildren=true",
+    "_id": "VjLGy40C2gS6Z8",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLGy40C2gS6Z8?extname=",
+    "linkType": "local",
+    "name": "sleep_modes",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/sleep_modes"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLGy40C2gS6Z8",
+    "packageOrder": 440
+  },
+  {
+    "text": "timers",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 4,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLEvO9ZCfHoFc&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLEvO9ZCfHoFc&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/timers&removeoffline=true&id=VjLEvO9ZCfHoFc&includechildren=true",
+    "_id": "VjLEvO9ZCfHoFc",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLEvO9ZCfHoFc?extname=",
+    "linkType": "local",
+    "name": "timers",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/timers"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLEvO9ZCfHoFc",
+    "packageOrder": 440
+  },
+  {
+    "text": "uart_echo",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 3,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjL3B0JSNnt0do&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjL3B0JSNnt0do&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/uart_echo&removeoffline=true&id=VjL3B0JSNnt0do&includechildren=true",
+    "_id": "VjL3B0JSNnt0do",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjL3B0JSNnt0do?extname=",
+    "linkType": "local",
+    "name": "uart_echo",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/uart_echo"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjL3B0JSNnt0do",
+    "packageOrder": 440
+  },
+  {
+    "text": "udma_demo",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLoIywVe-Ekb8&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLoIywVe-Ekb8&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/udma_demo&removeoffline=true&id=VjLoIywVe-Ekb8&includechildren=true",
+    "_id": "VjLoIywVe-Ekb8",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLoIywVe-Ekb8?extname=",
+    "linkType": "local",
+    "name": "udma_demo",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/udma_demo"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLoIywVe-Ekb8",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_dev_bulk",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 8,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLzh91Kdqu5P4&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLzh91Kdqu5P4&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_dev_bulk&removeoffline=true&id=VjLzh91Kdqu5P4&includechildren=true",
+    "_id": "VjLzh91Kdqu5P4",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLzh91Kdqu5P4?extname=",
+    "linkType": "local",
+    "name": "usb_dev_bulk",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_dev_bulk"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLzh91Kdqu5P4",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_dev_cserial",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 8,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLZarNsgec3t0&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLZarNsgec3t0&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_dev_cserial&removeoffline=true&id=VjLZarNsgec3t0&includechildren=true",
+    "_id": "VjLZarNsgec3t0",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLZarNsgec3t0?extname=",
+    "linkType": "local",
+    "name": "usb_dev_cserial",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_dev_cserial"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLZarNsgec3t0",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_dev_keyboard",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 8,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLoN_IxwEvcSI&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLoN_IxwEvcSI&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_dev_keyboard&removeoffline=true&id=VjLoN_IxwEvcSI&includechildren=true",
+    "_id": "VjLoN_IxwEvcSI",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLoN_IxwEvcSI?extname=",
+    "linkType": "local",
+    "name": "usb_dev_keyboard",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_dev_keyboard"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLoN_IxwEvcSI",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_host_keyboard",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLoFvrxjD8LR0&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLoFvrxjD8LR0&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_host_keyboard&removeoffline=true&id=VjLoFvrxjD8LR0&includechildren=true",
+    "_id": "VjLoFvrxjD8LR0",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLoFvrxjD8LR0?extname=",
+    "linkType": "local",
+    "name": "usb_host_keyboard",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_host_keyboard"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLoFvrxjD8LR0",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_host_mouse",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjL-QJb3QRCY5w&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjL-QJb3QRCY5w&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_host_mouse&removeoffline=true&id=VjL-QJb3QRCY5w&includechildren=true",
+    "_id": "VjL-QJb3QRCY5w",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjL-QJb3QRCY5w?extname=",
+    "linkType": "local",
+    "name": "usb_host_mouse",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_host_mouse"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjL-QJb3QRCY5w",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_host_msc",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLb6ZpE385CRo&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLb6ZpE385CRo&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_host_msc&removeoffline=true&id=VjLb6ZpE385CRo&includechildren=true",
+    "_id": "VjLb6ZpE385CRo",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLb6ZpE385CRo?extname=",
+    "linkType": "local",
+    "name": "usb_host_msc",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_host_msc"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLb6ZpE385CRo",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_stick_demo",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLarCccWzQWfw&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLarCccWzQWfw&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_stick_demo&removeoffline=true&id=VjLarCccWzQWfw&includechildren=true",
+    "_id": "VjLarCccWzQWfw",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLarCccWzQWfw?extname=",
+    "linkType": "local",
+    "name": "usb_stick_demo",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_stick_demo"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLarCccWzQWfw",
+    "packageOrder": 440
+  },
+  {
+    "text": "usb_stick_update",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 5,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjLnQdaWsJPfwI&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjLnQdaWsJPfwI&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_stick_update&removeoffline=true&id=VjLnQdaWsJPfwI&includechildren=true",
+    "_id": "VjLnQdaWsJPfwI",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjLnQdaWsJPfwI?extname=",
+    "linkType": "local",
+    "name": "usb_stick_update",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/usb_stick_update"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjLnQdaWsJPfwI",
+    "packageOrder": 440
+  },
+  {
+    "text": "watchdog",
+    "type": "folder",
+    "numChildren": 0,
+    "numChildrenLocal": 4,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "tm4c__2.1.4.178",
+    "url": "/api/resources?path=Software/TM4C%20ARM%C2%AE%20Cortex%C2%AE-M4F%20MCU/Development%20Tools/EK-TM4C1294XL/Examples&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34",
+    "downloadLink": "api/bundle?vid=tm4c__2.1.4.178&download=true&id=VjL_KBfuzT-kTU&includechildren=true",
+    "makeofflineLink": "api/bundles?vids=tm4c__2.1.4.178&id=VjL_KBfuzT-kTU&includechildren=true",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::tm4c__2.1.4.178::xdctools__3.60.02.34&path=Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/watchdog&removeoffline=true&id=VjL_KBfuzT-kTU&includechildren=true",
+    "_id": "VjL_KBfuzT-kTU",
+    "_originalJsonFile": "tivaware_c_series_2_1_4_178/content.tirex.json",
+    "devtools": [
+      "EK-TM4C1294XL"
+    ],
+    "hasIncludes": true,
+    "link": "api/linkTo/VjL_KBfuzT-kTU?extname=",
+    "linkType": "local",
+    "name": "watchdog",
+    "resourceGroup": [
+      {
+        "categoryContext": "",
+        "id": "Software/TM4C ARM® Cortex®-M4F MCU/Development Tools/EK-TM4C1294XL/Examples/watchdog"
+      }
+    ],
+    "resourceSubClass": [
+      "example.general"
+    ],
+    "resourceType": "project.ccs",
+    "importProject": "api/importProject/VjL_KBfuzT-kTU",
+    "packageOrder": 440
+  }
+]

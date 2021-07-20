@@ -1,0 +1,8 @@
+1613815482481	Rename resource 'MSP432_light_sensor'
+1613815507850	Rename resource '[not done]MSP432_light_sensor'
+1613815670089	Rename resource 'systick_interrupt_gpio_blink_MSP_EXP432P401R_nortos_ccs'
+1613850062445	Rename resource 'cs_dco_frequency_tune_MSP_EXP432P401R_nortos_ccs'
+1613851506150	Rename resource 'cs_clock_source_init_MSP_EXP432P401R_nortos_ccs'
+1613852441482	Rename resource 'cs_hfxt_start_MSP_EXP432P401R_nortos_ccs'
+1613855803333	Rename resource 'cs_lfxt_start_MSP_EXP432P401R_nortos_ccs'
+1613856880440	Rename resource 'cs_reference_oscillator_MSP_EXP432P401R_nortos_ccs'

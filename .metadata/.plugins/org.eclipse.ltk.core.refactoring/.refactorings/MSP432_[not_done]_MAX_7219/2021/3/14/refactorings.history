@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MSP432_[not_done]_MAX_7219/Backup/main.c&apos; to &apos;main_b.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Backup/main.c" name="main_b.c" stamp="1617197479047" updateReferences="true"/>
+</session>

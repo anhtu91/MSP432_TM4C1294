@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;MSP432_[not_done]_MAX7219/MAX7219.h&apos; to &apos;MAX7219.c&apos;" description="Rename resource &apos;MAX7219.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MAX7219.h" name="MAX7219.c" stamp="1617185524321" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;MSP432_[not_done]_MAX7219/MAX7219_Prototypes.h&apos; to &apos;MAX7219.h&apos;" description="Rename resource &apos;MAX7219_Prototypes.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MAX7219_Prototypes.h" name="MAX7219.h" stamp="1617185532585" updateReferences="true"/>
+</session>

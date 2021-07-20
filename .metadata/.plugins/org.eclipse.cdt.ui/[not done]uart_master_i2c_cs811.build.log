@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project [not done]uart_master_i2c_cs811 ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lib/ccs811.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --opt_for_speed=5 --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/[not done]uart_master_i2c_cs811/lib" --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/[not done]uart_master_i2c_cs811" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include" --advice:power=none --define=__MSP432P401R__ --define=DeviceFamily_MSP432P401x -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="lib/ccs811.d_raw" --obj_directory="lib"  "../lib/ccs811.c"
+"../lib/ccs811.c", line 19: warning #179-D: variable "app_start" was declared but never referenced
+"../lib/ccs811.c", line 21: warning #179-D: variable "hw_version" was declared but never referenced
+"../lib/ccs811.c", line 22: warning #179-D: variable "app_version" was declared but never referenced
+"../lib/ccs811.c", line 23: warning #179-D: variable "status" was declared but never referenced
+Finished building: "../lib/ccs811.c"
+ 
+Building target: "[not done]uart_master_i2c_cs811.out"
+Invoking: ARM Linker
+"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --opt_for_speed=5 --advice:power=none --define=__MSP432P401R__ --define=DeviceFamily_MSP432P401x -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"[not done]uart_master_i2c_cs811.map" --stack_size=512 -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="[not done]uart_master_i2c_cs811_linkInfo.xml" --rom_model -o "[not done]uart_master_i2c_cs811.out" "./main.obj" "./system_msp432p401r.obj" "./ccs/startup_msp432p401r_ccs.obj" "./lib/ccs811.obj" "../msp432p401r.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "[not done]uart_master_i2c_cs811.out"
+ 
+
+**** Build Finished ****

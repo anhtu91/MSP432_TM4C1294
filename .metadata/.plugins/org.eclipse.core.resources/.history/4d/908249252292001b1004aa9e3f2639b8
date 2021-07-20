@@ -1,0 +1,47 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../msp432p401r.cmd 
+
+C_SRCS += \
+../MAX7219.c \
+../SysTick.c \
+../main.c \
+../system_msp432p401r.c 
+
+C_DEPS += \
+./MAX7219.d \
+./SysTick.d \
+./main.d \
+./system_msp432p401r.d 
+
+OBJS += \
+./MAX7219.obj \
+./SysTick.obj \
+./main.obj \
+./system_msp432p401r.obj 
+
+OBJS__QUOTED += \
+"MAX7219.obj" \
+"SysTick.obj" \
+"main.obj" \
+"system_msp432p401r.obj" 
+
+C_DEPS__QUOTED += \
+"MAX7219.d" \
+"SysTick.d" \
+"main.d" \
+"system_msp432p401r.d" 
+
+C_SRCS__QUOTED += \
+"../MAX7219.c" \
+"../SysTick.c" \
+"../main.c" \
+"../system_msp432p401r.c" 
+
+

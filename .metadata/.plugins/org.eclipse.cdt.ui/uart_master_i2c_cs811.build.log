@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project uart_master_i2c_cs811 ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'uart_master_i2c_cs811.out' is up to date.
+
+**** Build Finished ****

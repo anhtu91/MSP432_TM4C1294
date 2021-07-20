@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;delay_ms_using_timer&apos; to &apos;delay_ms&apos;" description="Rename resource &apos;delay_ms_using_timer&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/delay_ms_using_timer" name="delay_ms" stamp="1611583337363" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;[not done]i2c_mpu6050&apos; to &apos;i2c_mpu6050&apos;" description="Rename resource &apos;[not done]i2c_mpu6050&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/[not done]i2c_mpu6050" name="i2c_mpu6050" stamp="1611590966480" updateReferences="true"/>
+</session>

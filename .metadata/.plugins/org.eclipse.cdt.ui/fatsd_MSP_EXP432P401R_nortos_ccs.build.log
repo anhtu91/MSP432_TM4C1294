@@ -1,0 +1,39 @@
+
+**** Build of configuration Debug for project fatsd_MSP_EXP432P401R_nortos_ccs ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../fatsd.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1011/ccs/utils/sysconfig_1.6.0/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" -o "syscfg" "../fatsd.syscfg"
+Running script...
+Validating...
+Generating Code...
+Writing C:\Users\ATN\Documents\Code Compose Studio workspace\fatsd_MSP_EXP432P401R_nortos_ccs\Debug\syscfg\ti_drivers_config.c...
+Writing C:\Users\ATN\Documents\Code Compose Studio workspace\fatsd_MSP_EXP432P401R_nortos_ccs\Debug\syscfg\ti_drivers_config.h...
+Writing C:\Users\ATN\Documents\Code Compose Studio workspace\fatsd_MSP_EXP432P401R_nortos_ccs\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../fatsd.syscfg"
+ 
+Building file: "../main_nortos.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs" --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "../fatsd_nortos.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs" --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="fatsd_nortos.d_raw" --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs/Debug/syscfg"  "../fatsd_nortos.c"
+Finished building: "../fatsd_nortos.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs" --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="C:/Users/ATN/Documents/Code Compose Studio workspace/fatsd_MSP_EXP432P401R_nortos_ccs/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "fatsd_MSP_EXP432P401R_nortos_ccs.out"
+Invoking: ARM Linker
+"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"fatsd_MSP_EXP432P401R_nortos_ccs.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="fatsd_MSP_EXP432P401R_nortos_ccs_linkInfo.xml" --entry_point=resetISR --rom_model -o "fatsd_MSP_EXP432P401R_nortos_ccs.out" "./syscfg/ti_drivers_config.obj" "./fatsd_nortos.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "fatsd_MSP_EXP432P401R_nortos_ccs.out"
+ 
+
+**** Build Finished ****

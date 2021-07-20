@@ -1,0 +1,7 @@
+1610142295694	Delete 8 resources
+1610142303316	Delete resource 'simplelink_msp432p4_sdk_3_40_01_02'
+1610153936488	Delete resource 'uart-transmitt'
+1610154079684	Delete resource 'blinkled_msp432p401r_MSP_EXP432P401R_nortos_ccs'
+1610154253028	Rename resource 'blinkled_msp432p401r_MSP_EXP432P401R_nortos_ccs'
+1610188113832	Delete resource 'uart_transmit'
+1610225078626	Rename resource 'uart_receive'

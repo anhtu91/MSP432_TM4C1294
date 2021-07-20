@@ -1,0 +1,378 @@
+******************************************************************************
+                  TI ARM Linker PC v20.2.4                     
+******************************************************************************
+>> Linked Mon Mar 29 13:52:22 2021
+
+OUTPUT FILE NAME:   <spi_3wire_incrementing_data-master_MSP_EXP432P401R_nortos_ccs.out>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 000006f9
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  MAIN                  00000000   00040000  00000980  0003f680  R  X
+  INFO                  00200000   00004000  00000000  00004000  R  X
+  SRAM_CODE             01000000   00010000  0000020c  0000fdf4  RW X
+  SRAM_DATA             20000000   00010000  0000020c  0000fdf4  RW  
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00000984   00000984    r-x
+  00000000    00000000    000000e4   000000e4    r-- .intvecs
+  000000e4    000000e4    0000083c   0000083c    r-x .text
+  00000920    00000920    0000004c   0000004c    r-- .const
+  00000970    00000970    00000014   00000014    r-- .cinit
+20000000    20000000    0000000c   00000000    rw-
+  20000000    20000000    0000000c   00000000    rw- .bss
+2000fe00    2000fe00    00000200   00000000    rw-
+  2000fe00    2000fe00    00000200   00000000    rw- .stack
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    000000e4     
+                  00000000    000000e4     startup_msp432p401r_ccs.obj (.intvecs:retain)
+
+.text      0    000000e4    0000083c     
+                  000000e4    00000104     msp432p4xx_driverlib.lib : cs.o (.text:_CSComputeCLKFrequency)
+                  000001e8    000000f8                              : cs.o (.text:CS_getDCOFrequency)
+                  000002e0    000000b0                              : spi.o (.text:SPI_initMaster)
+                  00000390    00000094                              : sysctl_a.o (.text:SysCtl_A_getTLVInfo)
+                  00000424    00000088                              : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
+                  000004ac    0000007c                              : cs.o (.text:_CSGetDOCFrequency)
+                  00000528    00000078     system_msp432p401r.obj (.text:SystemInit)
+                  000005a0    00000070     spi_3wire_incrementing_data-master.obj (.text:main)
+                  00000610    00000062     msp432p4xx_driverlib.lib : cs.o (.text:_CSGetDividerValue)
+                  00000672    00000002     startup_msp432p401r_ccs.obj (.text:Default_Handler)
+                  00000674    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  000006b8    00000040     msp432p4xx_driverlib.lib : spi.o (.text:is_A_Module)
+                  000006f8    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  0000072c    00000030     msp432p4xx_driverlib.lib : cs.o (.text:CS_clearInterruptFlag)
+                  0000075c    00000028                              : cs.o (.text:CS_getMCLK)
+                  00000784    00000026                              : spi.o (.text:SPI_transmitData)
+                  000007aa    00000024     SysTick.obj (.text:SysTick_Init)
+                  000007ce    00000002     --HOLE-- [fill = 0]
+                  000007d0    00000024     msp432p4xx_driverlib.lib : wdt_a.o (.text:WDT_A_holdTimer)
+                  000007f4    00000020     SysTick.obj (.text:SysTick_Handler)
+                  00000814    0000001c     msp432p4xx_driverlib.lib : spi.o (.text:SPI_enableModule)
+                  00000830    0000001c     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  0000084c    00000018     msp432p4xx_driverlib.lib : systick.o (.text:SysTick_setPeriod)
+                  00000864    00000016                              : spi.o (.text:EUSCI_A_SPI_enable)
+                  0000087a    00000016                              : spi.o (.text:EUSCI_A_SPI_transmitData)
+                  00000890    00000016                              : spi.o (.text:EUSCI_B_SPI_enable)
+                  000008a6    00000016                              : spi.o (.text:EUSCI_B_SPI_transmitData)
+                  000008bc    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : strlen.c.obj (.text:strlen)
+                  000008d0    00000010     msp432p4xx_driverlib.lib : interrupt.o (.text:Interrupt_enableMaster)
+                  000008e0    00000010                              : systick.o (.text:SysTick_enableInterrupt)
+                  000008f0    00000010                              : systick.o (.text:SysTick_enableModule)
+                  00000900    0000000c                              : cpu.o (.text:CPU_cpsie)
+                  0000090c    0000000c     startup_msp432p401r_ccs.obj (.text:Reset_Handler)
+                  00000918    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  0000091c    00000004                                   : exit.c.obj (.text:abort:abort)
+
+.const     0    00000920    0000004c     
+                  00000920    00000030     msp432p4xx_driverlib.lib : gpio.o (.const:GPIO_PORT_TO_BASE)
+                  00000950    0000001c     spi_3wire_incrementing_data-master.obj (.const:spiMasterConfig)
+
+.cinit     0    00000970    00000014     
+                  00000970    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00000978    00000004     (__TI_handler_table)
+                  0000097c    00000008     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.binit     0    00000000    00000000     
+
+.bss       0    20000000    0000000c     UNINITIALIZED
+                  20000000    00000008     msp432p4xx_driverlib.lib : cs.o (.bss)
+                  20000008    00000004     (.common:uwTick)
+
+.stack     0    2000fe00    00000200     UNINITIALIZED
+                  2000fe00    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  2000fe04    000001fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20000000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                                   code   ro data   rw data
+       ------                                   ----   -------   -------
+    .\
+       spi_3wire_incrementing_data-master.obj   112    28        0      
+       system_msp432p401r.obj                   120    0         0      
+       SysTick.obj                              68     0         8      
+    +--+----------------------------------------+------+---------+---------+
+       Total:                                   300    28        8      
+                                                                        
+    .\ccs\
+       startup_msp432p401r_ccs.obj              14     228       0      
+    +--+----------------------------------------+------+---------+---------+
+       Total:                                   14     228       0      
+                                                                        
+    C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib
+       cs.o                                     818    0         16     
+       spi.o                                    394    0         0      
+       gpio.o                                   136    48        0      
+       sysctl_a.o                               148    0         0      
+       systick.o                                56     0         0      
+       wdt_a.o                                  36     0         0      
+       interrupt.o                              16     0         0      
+       cpu.o                                    12     0         0      
+    +--+----------------------------------------+------+---------+---------+
+       Total:                                   1616   48        16     
+                                                                        
+    C:\ti\ccs1011\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       autoinit.c.obj                           68     0         0      
+       boot_cortex_m.c.obj                      52     0         0      
+       copy_zero_init.c.obj                     28     0         0      
+       strlen.c.obj                             20     0         0      
+       exit.c.obj                               4      0         0      
+       pre_init.c.obj                           4      0         0      
+    +--+----------------------------------------+------+---------+---------+
+       Total:                                   176    0         0      
+                                                                        
+       Stack:                                   0      0         1024   
+       Linker Generated:                        0      20        0      
+    +--+----------------------------------------+------+---------+---------+
+       Grand Total:                             2106   324       1048   
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0000097c records: 1, size/record: 8, table size: 8
+	.bss: load addr=00000970, load size=00000008 bytes, run addr=20000000, run size=0000000c bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00000978 records: 1, size/record: 4, table size: 4
+	index: 0, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                                      
+-------   ----                                      
+00000673  ADC14_IRQHandler                          
+00000673  AES256_IRQHandler                         
+00000673  BusFault_Handler                          
+0000091d  C$$EXIT                                   
+00000673  COMP_E0_IRQHandler                        
+00000673  COMP_E1_IRQHandler                        
+00000901  CPU_cpsie                                 
+00000673  CS_IRQHandler                             
+0000072d  CS_clearInterruptFlag                     
+000001e9  CS_getDCOFrequency                        
+0000075d  CS_getMCLK                                
+00000673  DMA_ERR_IRQHandler                        
+00000673  DMA_INT0_IRQHandler                       
+00000673  DMA_INT1_IRQHandler                       
+00000673  DMA_INT2_IRQHandler                       
+00000673  DMA_INT3_IRQHandler                       
+00000673  DebugMon_Handler                          
+00000673  Default_Handler                           
+00000673  EUSCIA0_IRQHandler                        
+00000673  EUSCIA1_IRQHandler                        
+00000673  EUSCIA2_IRQHandler                        
+00000673  EUSCIA3_IRQHandler                        
+00000673  EUSCIB0_IRQHandler                        
+00000673  EUSCIB1_IRQHandler                        
+00000673  EUSCIB2_IRQHandler                        
+00000673  EUSCIB3_IRQHandler                        
+00000865  EUSCI_A_SPI_enable                        
+0000087b  EUSCI_A_SPI_transmitData                  
+00000891  EUSCI_B_SPI_enable                        
+000008a7  EUSCI_B_SPI_transmitData                  
+00000673  FLCTL_IRQHandler                          
+00000673  FPU_IRQHandler                            
+00000425  GPIO_setAsPeripheralModuleFunctionInputPin
+00000673  HardFault_Handler                         
+000008d1  Interrupt_enableMaster                    
+00000673  MemManage_Handler                         
+00000673  NMI_Handler                               
+00000673  PCM_IRQHandler                            
+00000673  PORT1_IRQHandler                          
+00000673  PORT2_IRQHandler                          
+00000673  PORT3_IRQHandler                          
+00000673  PORT4_IRQHandler                          
+00000673  PORT5_IRQHandler                          
+00000673  PORT6_IRQHandler                          
+00000673  PSS_IRQHandler                            
+00000673  PendSV_Handler                            
+00000673  RTC_C_IRQHandler                          
+0000090d  Reset_Handler                             
+00000815  SPI_enableModule                          
+000002e1  SPI_initMaster                            
+00000785  SPI_transmitData                          
+00000673  SVC_Handler                               
+00000391  SysCtl_A_getTLVInfo                       
+000007f5  SysTick_Handler                           
+000007f5  SysTick_Handler                           
+000007ab  SysTick_Init                              
+000008e1  SysTick_enableInterrupt                   
+000008f1  SysTick_enableModule                      
+0000084d  SysTick_setPeriod                         
+00000529  SystemInit                                
+00000673  T32_INT1_IRQHandler                       
+00000673  T32_INT2_IRQHandler                       
+00000673  T32_INTC_IRQHandler                       
+00000673  TA0_0_IRQHandler                          
+00000673  TA0_N_IRQHandler                          
+00000673  TA1_0_IRQHandler                          
+00000673  TA1_N_IRQHandler                          
+00000673  TA2_0_IRQHandler                          
+00000673  TA2_N_IRQHandler                          
+00000673  TA3_0_IRQHandler                          
+00000673  TA3_N_IRQHandler                          
+00000673  UsageFault_Handler                        
+4000480c  WDTCTL_SYM                                
+00000673  WDT_A_IRQHandler                          
+000007d1  WDT_A_holdTimer                           
+20010000  __STACK_END                               
+00000200  __STACK_SIZE                              
+0000097c  __TI_CINIT_Base                           
+00000984  __TI_CINIT_Limit                          
+00000978  __TI_Handler_Table_Base                   
+0000097c  __TI_Handler_Table_Limit                  
+00000675  __TI_auto_init_nobinit_nopinit            
+ffffffff  __TI_pprof_out_hndl                       
+ffffffff  __TI_prof_data_size                       
+ffffffff  __TI_prof_data_start                      
+00000000  __TI_static_base__                        
+00000831  __TI_zero_init_nomemset                   
+ffffffff  __binit__                                 
+ffffffff  __c_args__                                
+UNDEFED   __mpu_init                                
+2000fe00  __stack                                   
+20000000  __start___llvm_prf_cnts                   
+20000000  __stop___llvm_prf_cnts                    
+000006f9  _c_int00_noargs                           
+UNDEFED   _system_post_cinit                        
+00000919  _system_pre_init                          
+0000091d  abort                                     
+ffffffff  binit                                     
+00000000  interruptVectors                          
+000005a1  main                                      
+00000950  spiMasterConfig                           
+000008bd  strlen                                    
+20000008  uwTick                                    
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                                      
+-------   ----                                      
+00000000  __TI_static_base__                        
+00000000  interruptVectors                          
+000001e9  CS_getDCOFrequency                        
+00000200  __STACK_SIZE                              
+000002e1  SPI_initMaster                            
+00000391  SysCtl_A_getTLVInfo                       
+00000425  GPIO_setAsPeripheralModuleFunctionInputPin
+00000529  SystemInit                                
+000005a1  main                                      
+00000673  ADC14_IRQHandler                          
+00000673  AES256_IRQHandler                         
+00000673  BusFault_Handler                          
+00000673  COMP_E0_IRQHandler                        
+00000673  COMP_E1_IRQHandler                        
+00000673  CS_IRQHandler                             
+00000673  DMA_ERR_IRQHandler                        
+00000673  DMA_INT0_IRQHandler                       
+00000673  DMA_INT1_IRQHandler                       
+00000673  DMA_INT2_IRQHandler                       
+00000673  DMA_INT3_IRQHandler                       
+00000673  DebugMon_Handler                          
+00000673  Default_Handler                           
+00000673  EUSCIA0_IRQHandler                        
+00000673  EUSCIA1_IRQHandler                        
+00000673  EUSCIA2_IRQHandler                        
+00000673  EUSCIA3_IRQHandler                        
+00000673  EUSCIB0_IRQHandler                        
+00000673  EUSCIB1_IRQHandler                        
+00000673  EUSCIB2_IRQHandler                        
+00000673  EUSCIB3_IRQHandler                        
+00000673  FLCTL_IRQHandler                          
+00000673  FPU_IRQHandler                            
+00000673  HardFault_Handler                         
+00000673  MemManage_Handler                         
+00000673  NMI_Handler                               
+00000673  PCM_IRQHandler                            
+00000673  PORT1_IRQHandler                          
+00000673  PORT2_IRQHandler                          
+00000673  PORT3_IRQHandler                          
+00000673  PORT4_IRQHandler                          
+00000673  PORT5_IRQHandler                          
+00000673  PORT6_IRQHandler                          
+00000673  PSS_IRQHandler                            
+00000673  PendSV_Handler                            
+00000673  RTC_C_IRQHandler                          
+00000673  SVC_Handler                               
+00000673  T32_INT1_IRQHandler                       
+00000673  T32_INT2_IRQHandler                       
+00000673  T32_INTC_IRQHandler                       
+00000673  TA0_0_IRQHandler                          
+00000673  TA0_N_IRQHandler                          
+00000673  TA1_0_IRQHandler                          
+00000673  TA1_N_IRQHandler                          
+00000673  TA2_0_IRQHandler                          
+00000673  TA2_N_IRQHandler                          
+00000673  TA3_0_IRQHandler                          
+00000673  TA3_N_IRQHandler                          
+00000673  UsageFault_Handler                        
+00000673  WDT_A_IRQHandler                          
+00000675  __TI_auto_init_nobinit_nopinit            
+000006f9  _c_int00_noargs                           
+0000072d  CS_clearInterruptFlag                     
+0000075d  CS_getMCLK                                
+00000785  SPI_transmitData                          
+000007ab  SysTick_Init                              
+000007d1  WDT_A_holdTimer                           
+000007f5  SysTick_Handler                           
+000007f5  SysTick_Handler                           
+00000815  SPI_enableModule                          
+00000831  __TI_zero_init_nomemset                   
+0000084d  SysTick_setPeriod                         
+00000865  EUSCI_A_SPI_enable                        
+0000087b  EUSCI_A_SPI_transmitData                  
+00000891  EUSCI_B_SPI_enable                        
+000008a7  EUSCI_B_SPI_transmitData                  
+000008bd  strlen                                    
+000008d1  Interrupt_enableMaster                    
+000008e1  SysTick_enableInterrupt                   
+000008f1  SysTick_enableModule                      
+00000901  CPU_cpsie                                 
+0000090d  Reset_Handler                             
+00000919  _system_pre_init                          
+0000091d  C$$EXIT                                   
+0000091d  abort                                     
+00000950  spiMasterConfig                           
+00000978  __TI_Handler_Table_Base                   
+0000097c  __TI_CINIT_Base                           
+0000097c  __TI_Handler_Table_Limit                  
+00000984  __TI_CINIT_Limit                          
+20000000  __start___llvm_prf_cnts                   
+20000000  __stop___llvm_prf_cnts                    
+20000008  uwTick                                    
+2000fe00  __stack                                   
+20010000  __STACK_END                               
+4000480c  WDTCTL_SYM                                
+ffffffff  __TI_pprof_out_hndl                       
+ffffffff  __TI_prof_data_size                       
+ffffffff  __TI_prof_data_start                      
+ffffffff  __binit__                                 
+ffffffff  __c_args__                                
+ffffffff  binit                                     
+UNDEFED   __mpu_init                                
+UNDEFED   _system_post_cinit                        
+
+[103 symbols]

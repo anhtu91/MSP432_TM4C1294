@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="11"/>
+		<item key="DIALOG_Y_ORIGIN" value="11"/>
+	</section>
+	<section name="MemoryDumperFillAction">
+		<item key="com.ti.ccstudio.system.setup.ui.editors.connectionName" value="Texas Instruments XDS110 USB Debug Probe"/>
+		<item key="com.ti.ccstudio.system.setup.ui.editors.connectionType" value="TIXDS110"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

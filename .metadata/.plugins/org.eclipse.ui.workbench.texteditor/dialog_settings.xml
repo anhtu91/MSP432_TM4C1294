@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="true"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="Interrupt_setPriority"/>
+			<item value="ii"/>
+			<item value="s"/>
+			<item value="#ifndef ASCII_CHART_H"/>
+			<item value="symbol"/>
+			<item value="symboy"/>
+			<item value="LedControl"/>
+			<item value="delay"/>
+			<item value="lc."/>
+			<item value="B"/>
+			<item value="SPI_CS"/>
+			<item value="SPI_MODULE"/>
+			<item value="SPI_CLK"/>
+			<item value="B0"/>
+			<item value="SysTick_Delay"/>
+		</list>
+		<list key="replacehistory">
+			<item value="SysTick_Delay"/>
+			<item value=""/>
+			<item value="0b"/>
+			<item value="DESELECT();"/>
+			<item value="SELECT();"/>
+			<item value="//DESELECT"/>
+			<item value="//SELECT"/>
+			<item value="MPU6050_SMPLRT_DIV"/>
+			<item value="MPU6050_Begin"/>
+			<item value="print_uart"/>
+			<item value="I2C_Module"/>
+			<item value="EUSCI_B1_BASE"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1330"/>
+		<item key="DIALOG_Y_ORIGIN" value="325"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
